@@ -1,0 +1,10 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZC_INVOICE_ITEM_EMISSIONS
+    with 
+{
+    @UI.lineItem: [{
+        position: 10 ,
+        importance: #HIGH
+    },{ type: #FOR_ACTION, dataAction: 'verifyCarbonEmissions', label: 'Verify Carbon Emissions' }, { type: #WITH_URL, url: 'ShuttleURL' }]
+    CarbonAmount;
+}

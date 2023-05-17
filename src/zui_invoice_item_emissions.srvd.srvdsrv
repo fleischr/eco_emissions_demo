@@ -1,0 +1,4 @@
+@EndUserText.label: 'Provide ECO -Emissions Verification demo'
+define service ZUI_INVOICE_ITEM_EMISSIONS {
+  expose ZC_INVOICE_ITEM_EMISSIONS;
+}

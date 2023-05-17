@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_invoice_item_emissions unique;
+strict ( 2 );
+
+define behavior for ZI_INVOICE_ITEM_EMISSIONS //alias <alias_name>
+persistent table snwd_po_inv_item
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //create;
+  //update;
+  //delete;
+  action ( features : instance ) verifyCarbonEmissions result [1] $self;
+}
