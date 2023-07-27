@@ -11,4 +11,5 @@ authorization master ( instance )
   //update;
   //delete;
   action ( features : instance ) verifyCarbonEmissions result [1] $self;
+  action ( features : instance ) offsetCarbonEmissions result [1] $self;
 }

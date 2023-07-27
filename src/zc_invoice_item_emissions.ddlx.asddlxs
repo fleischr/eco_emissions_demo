@@ -7,4 +7,9 @@ annotate entity ZC_INVOICE_ITEM_EMISSIONS
         importance: #HIGH
     },{ type: #FOR_ACTION, dataAction: 'verifyCarbonEmissions', label: 'Verify Carbon Emissions' }, { type: #WITH_URL, url: 'ShuttleURL' }]
     CarbonAmount;
+    @UI.lineItem: [{
+        position: 20 ,
+        importance: #HIGH
+    },{ type: #FOR_ACTION, dataAction: 'offsetCarbonEmissions', label: 'Offset Carbon Emissions' }]
+    CarbonUom;
 }

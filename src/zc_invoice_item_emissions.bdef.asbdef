@@ -5,4 +5,5 @@ define behavior for ZC_INVOICE_ITEM_EMISSIONS //alias <alias_name>
 {
 
   use action verifyCarbonEmissions;
+  use action offsetCarbonEmissions;
 }

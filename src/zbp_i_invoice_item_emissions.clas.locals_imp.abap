@@ -10,6 +10,9 @@ CLASS lhc_ZI_INVOICE_ITEM_EMISSIONS DEFINITION INHERITING FROM cl_abap_behavior_
     METHODS verifyCarbonEmissions FOR MODIFY
       IMPORTING keys FOR ACTION zi_invoice_item_emissions~verifyCarbonEmissions RESULT result.
 
+    METHODS offsetCarbonEmissions FOR MODIFY
+      IMPORTING keys FOR ACTION zi_invoice_item_emissions~offsetCarbonEmissions RESULT result.
+
 ENDCLASS.
 
 CLASS lhc_ZI_INVOICE_ITEM_EMISSIONS IMPLEMENTATION.
@@ -74,6 +77,9 @@ CLASS lhc_ZI_INVOICE_ITEM_EMISSIONS IMPLEMENTATION.
 *    result = VALUE #( FOR item IN invitems
 *             ( %tky   = item-%tky
 *               %param = item ) ).
+  ENDMETHOD.
+
+  method offsetCarbonEmissions.
   ENDMETHOD.
 
 ENDCLASS.
